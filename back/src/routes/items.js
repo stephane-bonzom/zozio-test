@@ -6,8 +6,17 @@ const postQuery = require('../middlewares/csvQuery').postQuery;
 const putQuery = require('../middlewares/csvQuery').putQuery;
 const deleteQuery = require('../middlewares/csvQuery').deleteQuery;
 
+/**
+ * Get items from csv
+ * @name get/items/
+ * @param {Bearer token} Authorization - Auth token
+ * @param {string} chariot - chariot id (optionnal)
+ * @param {string} type - item type (optionnal)
+ * @param {string} zone - item zone (optionnal)
+ * @param {integer} quantity - item quantity (optionnal)
+ * @param {string} sav - item sav (optionnal)   
+ */
 router.get('/', auth, getQuery, async function(req, res, next) {
-    console.log(req.id);
     res.status(200).end();
 });
 

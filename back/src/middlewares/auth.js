@@ -1,4 +1,9 @@
-
+/**
+ * Verify auth token
+ * @param {*} req 
+ * @param {*} res 
+ * @param {*} next 
+ */
 const auth = async (req, res, next) => {
     try {
         const token = req.header('Authorization').replace('Bearer', '');

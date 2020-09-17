@@ -1,0 +1,70 @@
+{
+	"info": {
+		"_postman_id": "6ed3c81d-2ea4-4fdc-a7fa-53a81a3330c5",
+		"name": "zozio-test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/items/",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer test",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "chariot",
+							"value": "ASSET57",
+							"type": "text"
+						},
+						{
+							"key": "quantity",
+							"value": "5",
+							"type": "text"
+						},
+						{
+							"key": "zone",
+							"value": "STOC2",
+							"type": "text"
+						},
+						{
+							"key": "type",
+							"value": "armoire",
+							"type": "text"
+						},
+						{
+							"key": "sav",
+							"value": "non",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/items/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"items",
+						""
+					]
+				},
+				"description": "GET items from CSV - Zozio test"
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
